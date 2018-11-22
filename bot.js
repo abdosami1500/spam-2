@@ -1,14 +1,12 @@
-new Discord.Client();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 console.log("Scrpit By Dream");
 
 
 client.on("ready", () => {
-let channel =     client.channels.get("505125121896480780")
+let channel =     client.channels.get("515073352554119171")
 setInterval(function() {
 channel.send(`youtube`);
 }, 25)
 })
- 
- 
-client.login('NTAzMjY3MDE0NDUwNjEwMjE3.DrYFXA.AfTopE0czjijO_HgM4rM3RuIBrg');
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
